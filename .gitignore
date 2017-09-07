@@ -19,3 +19,6 @@ _autosave-*
 # Exported BOM files
 *.xml
 *.csv
+
+# Exported PDF files (put these into a release ZIP instead)
+*.pdf

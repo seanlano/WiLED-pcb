@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP R-78E-0.5
+D 500mA 3.3V SIP3 Single Output
+K switching step-down DC regulator
+$ENDCMP
+#
+#End Doc Library
