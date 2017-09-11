@@ -73,7 +73,7 @@ U 1 1 59883A9C
 P 2350 1300
 F 0 "C3" V 2250 1150 50  0000 L CNN
 F 1 "100nF" V 2500 1150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2388 1150 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2388 1150 50  0001 C CNN
 F 3 "" H 2350 1300 50  0000 C CNN
 	1    2350 1300
 	0    1    1    0   
@@ -422,7 +422,7 @@ U 1 1 5996F1E4
 P 8550 2950
 F 0 "P1" H 8550 3200 50  0000 C TNN
 F 1 "DC In" V 8400 2950 50  0000 C TNN
-F 2 "custom-footprints:Terminal" H 8550 2725 50  0001 C CNN
+F 2 "custom-footprints:2x2mm" H 8550 2725 50  0001 C CNN
 F 3 "" H 8525 2950 50  0001 C CNN
 	1    8550 2950
 	1    0    0    1   
@@ -431,43 +431,32 @@ Text GLabel 9150 2600 1    47   Input ~ 0
 RAW
 Text GLabel 3550 4700 0    47   Input ~ 0
 RAW
-$Comp
-L CONN_02X04 P2
-U 1 1 59979E35
-P 9400 4300
-F 0 "P2" H 9400 4550 50  0000 C CNN
-F 1 "LED Connector" H 9400 4050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x04" H 9400 3100 50  0001 C CNN
-F 3 "" H 9400 3100 50  0000 C CNN
-	1    9400 4300
-	1    0    0    -1  
-$EndComp
-Text GLabel 9050 4150 0    47   Input ~ 0
+Text GLabel 9550 4450 2    47   Input ~ 0
 RAW
 $Comp
 L GND #PWR015
 U 1 1 5997B5E9
-P 10300 4550
-F 0 "#PWR015" H 10300 4300 50  0001 C CNN
-F 1 "GND" H 10300 4400 50  0000 C CNN
-F 2 "" H 10300 4550 50  0000 C CNN
-F 3 "" H 10300 4550 50  0000 C CNN
-	1    10300 4550
+P 9550 4650
+F 0 "#PWR015" H 9550 4400 50  0001 C CNN
+F 1 "GND" H 9550 4500 50  0000 C CNN
+F 2 "" H 9550 4650 50  0000 C CNN
+F 3 "" H 9550 4650 50  0000 C CNN
+	1    9550 4650
 	1    0    0    -1  
 $EndComp
-Text GLabel 9750 4250 2    47   BiDi ~ 0
+Text GLabel 9550 4050 2    47   BiDi ~ 0
 LED_PWM
 Text GLabel 3800 2350 2    47   BiDi ~ 0
 ENC_A
 Text GLabel 3800 2550 2    47   BiDi ~ 0
 ENC_B
-Text GLabel 9050 4350 0    47   BiDi ~ 0
+Text GLabel 9550 4350 2    47   BiDi ~ 0
 ENC_A
-Text GLabel 9050 4450 0    47   BiDi ~ 0
+Text GLabel 9550 4250 2    47   BiDi ~ 0
 ENC_B
-Text GLabel 9050 4250 0    47   BiDi ~ 0
+Text GLabel 9550 4150 2    47   BiDi ~ 0
 ENC_SW
-Text GLabel 9750 4350 2    47   BiDi ~ 0
+Text GLabel 9550 3950 2    47   BiDi ~ 0
 IND_PWM
 Text Notes 8250 3650 0    60   ~ 0
 Off-board Connector
@@ -483,7 +472,7 @@ U 1 1 599828AE
 P 6550 4150
 F 0 "C4" H 6575 4250 50  0000 L CNN
 F 1 "100nF" H 6575 4050 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6588 4000 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6588 4000 50  0001 C CNN
 F 3 "" H 6550 4150 50  0000 C CNN
 	1    6550 4150
 	1    0    0    -1  
@@ -505,7 +494,7 @@ U 1 1 59983046
 P 7400 4150
 F 0 "C5" H 7425 4250 50  0000 L CNN
 F 1 "100nF" H 7425 4050 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7438 4000 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7438 4000 50  0001 C CNN
 F 3 "" H 7400 4150 50  0000 C CNN
 	1    7400 4150
 	1    0    0    -1  
@@ -688,22 +677,6 @@ Wire Notes Line
 	8150 2300 8150 3500
 Wire Wire Line
 	3550 4700 3650 4700
-Wire Wire Line
-	9650 4150 10300 4150
-Wire Wire Line
-	9050 4150 9150 4150
-Wire Wire Line
-	9050 4250 9150 4250
-Wire Wire Line
-	9050 4350 9150 4350
-Wire Wire Line
-	9050 4450 9150 4450
-Wire Wire Line
-	10300 4150 10300 4550
-Wire Wire Line
-	9650 4250 9750 4250
-Wire Wire Line
-	9750 4350 9650 4350
 Wire Notes Line
 	10950 3700 10950 4900
 Wire Notes Line
@@ -782,9 +755,6 @@ Wire Notes Line
 	4950 900  4950 3500
 Wire Notes Line
 	700  3500 700  900 
-Wire Wire Line
-	10300 4450 9650 4450
-Connection ~ 10300 4450
 Text Notes 5250 2250 0    60   ~ 0
 Power LED
 $Comp
@@ -972,4 +942,31 @@ F 3 "" H 3000 5500 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	3000 5400 3000 5500
+$Comp
+L CONN_01X07 P2
+U 1 1 59B5296F
+P 9250 4250
+F 0 "P2" H 9250 4650 50  0000 C CNN
+F 1 "LED Connector" V 9350 4250 50  0000 C CNN
+F 2 "custom-footprints:7x2mm" H 9250 4250 50  0001 C CNN
+F 3 "" H 9250 4250 50  0000 C CNN
+	1    9250 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9450 4550 9550 4550
+Wire Wire Line
+	9550 4550 9550 4650
+Wire Wire Line
+	9450 3950 9550 3950
+Wire Wire Line
+	9450 4050 9550 4050
+Wire Wire Line
+	9450 4150 9550 4150
+Wire Wire Line
+	9450 4250 9550 4250
+Wire Wire Line
+	9450 4350 9550 4350
+Wire Wire Line
+	9450 4450 9550 4450
 $EndSCHEMATC
