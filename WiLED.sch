@@ -349,10 +349,10 @@ F 3 "" H 2650 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R-78E-0.5 U3
+L R-78E-0.5 U2
 U 1 1 5996AF16
 P 10000 2700
-F 0 "U3" H 10100 2450 50  0000 C CNN
+F 0 "U2" H 10100 2450 50  0000 C CNN
 F 1 "R-78E-0.5" H 10000 2950 50  0000 C CNN
 F 2 "Power_Integrations:TO-220" H 10000 2700 50  0001 C CNN
 F 3 "" H 10000 2700 50  0000 C CNN
@@ -425,7 +425,7 @@ F 1 "DC In" V 8400 2950 50  0000 C TNN
 F 2 "custom-footprints:2x2mm" H 8550 2725 50  0001 C CNN
 F 3 "" H 8525 2950 50  0001 C CNN
 	1    8550 2950
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 Text GLabel 9150 2600 1    47   Input ~ 0
 RAW
