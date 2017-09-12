@@ -513,7 +513,7 @@ $EndComp
 Text GLabel 3500 5500 0    47   BiDi ~ 0
 RF_CS
 Text Notes 5250 850  0    60   ~ 0
-Serial to USB Header
+Serial to USB Header (not broken out on PCB)
 $Comp
 L CONN_01X06 P3
 U 1 1 59997099
