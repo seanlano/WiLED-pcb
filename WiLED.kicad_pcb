@@ -946,13 +946,13 @@
     )
   )
 
-  (module custom-footprints:Button_6.5mm (layer F.Cu) (tedit 59B7DD2E) (tstamp 59B509F7)
+  (module custom-footprints:Button_6.5mm (layer F.Cu) (tedit 59BFA3EC) (tstamp 59B509F7)
     (at 168.275 109.855 90)
     (path /598840DF)
     (fp_text reference SW1 (at 0 2.54 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Reset (at 6.223 0 90) (layer F.SilkS)
+    (fp_text value RST (at 6.223 0 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -1.8415 -1.2065) (end 1.8415 -1.2065) (layer F.Fab) (width 0.15))
@@ -969,7 +969,7 @@
       (net 13 RST))
   )
 
-  (module Pin_Headers:Pin_Header_Straight_1x02 (layer F.Cu) (tedit 59B91B95) (tstamp 59B509FF)
+  (module Pin_Headers:Pin_Header_Straight_1x02 (layer F.Cu) (tedit 59BFA3E4) (tstamp 59B509FF)
     (at 164.465 111.125 180)
     (descr "Through hole pin header")
     (tags "pin header")
@@ -977,7 +977,7 @@
     (fp_text reference SW2 (at 0 -5.1 180) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Bootload (at 0 5.969 270) (layer F.SilkS)
+    (fp_text value BOOT (at 0 5.969 270) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 1.27 1.27) (end 1.27 3.81) (layer F.SilkS) (width 0.15))
