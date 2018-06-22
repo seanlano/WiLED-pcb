@@ -1,4 +1,4 @@
-update=Mon 07 Aug 2017 21:06:13 AEST
+update=Mon 18 Jun 2018 19:47:11 AEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=/home/sean/Documents/KiCad/custom-components
+LibDir=ESP32-kiCAD-Footprints/ESP32-Footprints
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,5 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=ESP8266
-LibName31=MiscellaneousDevices
+LibName30=ESP32-kiCAD-Footprints/ESP32-Footprints/espressif-xess
