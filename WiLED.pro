@@ -1,4 +1,4 @@
-update=Mon 18 Jun 2018 19:47:11 AEST
+update=Sun 01 Jul 2018 13:57:52 AEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=ESP32-kiCAD-Footprints/ESP32-Footprints
@@ -59,3 +57,5 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=ESP32-kiCAD-Footprints/ESP32-Footprints/espressif-xess
+[general]
+version=1
