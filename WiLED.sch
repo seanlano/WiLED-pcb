@@ -36,7 +36,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "WiLED ESP32 Base"
-Date "2018-07-01"
+Date "2018-07-02"
 Rev "2.0"
 Comp "Sean Lanigan"
 Comment1 ""
@@ -941,7 +941,7 @@ F 1 "LED Out" V 9800 4300 50  0000 C TNN
 F 2 "custom-footprints:Terminal" H 9950 4075 50  0001 C CNN
 F 3 "" H 9925 4300 50  0001 C CNN
 	1    9950 4300
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L AL8860WT-7 U3
