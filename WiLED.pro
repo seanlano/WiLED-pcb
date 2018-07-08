@@ -1,4 +1,4 @@
-update=Wed 04 Jul 2018 23:05:06 AEST
+update=Sun 08 Jul 2018 13:17:48 AEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -57,5 +57,15 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=ESP32-kiCAD-Footprints/ESP32-Footprints/espressif-xess
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [general]
 version=1

@@ -36,7 +36,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "WiLED ESP32 Base"
-Date "2018-07-02"
+Date "2018-07-08"
 Rev "2.0"
 Comp "Sean Lanigan"
 Comment1 ""
@@ -1335,7 +1335,6 @@ $EndComp
 Wire Wire Line
 	7450 5950 7450 6000
 Connection ~ 7450 5950
-NoConn ~ 4000 3000
 NoConn ~ 4000 2900
 NoConn ~ 4000 2800
 NoConn ~ 4000 2700
@@ -1483,4 +1482,63 @@ Wire Notes Line
 	3200 4350 2800 4350
 Text Notes 2700 4700 0    50   ~ 0
 R16 is optional
+$Comp
+L HC-SR501 U4
+U 1 1 5B4045C3
+P 6400 7050
+F 0 "U4" H 6550 7350 60  0000 C CNN
+F 1 "HC-SR501" H 6400 6750 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.00mm" H 6400 6950 60  0001 C CNN
+F 3 "" H 6400 6950 60  0001 C CNN
+	1    6400 7050
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	5150 6500 6800 6500
+Wire Notes Line
+	6800 6500 6800 7650
+Wire Notes Line
+	6800 7650 5150 7650
+Wire Notes Line
+	5150 7650 5150 6500
+$Comp
+L +3.3V #PWR028
+U 1 1 5B40519F
+P 5450 6800
+F 0 "#PWR028" H 5450 6650 50  0001 C CNN
+F 1 "+3.3V" H 5450 6940 50  0000 C CNN
+F 2 "" H 5450 6800 50  0000 C CNN
+F 3 "" H 5450 6800 50  0000 C CNN
+	1    5450 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR029
+U 1 1 5B405342
+P 5450 7300
+F 0 "#PWR029" H 5450 7050 50  0001 C CNN
+F 1 "GND" H 5450 7150 50  0000 C CNN
+F 2 "" H 5450 7300 50  0000 C CNN
+F 3 "" H 5450 7300 50  0000 C CNN
+	1    5450 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 6800 5450 6900
+Wire Wire Line
+	5450 6900 6000 6900
+Wire Wire Line
+	5450 7300 5450 7200
+Wire Wire Line
+	5450 7200 6000 7200
+Text GLabel 5900 7050 0    60   3State ~ 0
+PIR_TRG
+Wire Wire Line
+	5900 7050 6000 7050
+Text GLabel 4150 3000 2    47   3State ~ 0
+PIR_TRG
+Wire Wire Line
+	4000 3000 4150 3000
+Text Notes 5250 6450 0    60   ~ 0
+Passive Infrared Sensor
 $EndSCHEMATC
