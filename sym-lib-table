@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name WiLED-rescue)(type Legacy)(uri ${KIPRJMOD}/WiLED-rescue.lib)(options "")(descr ""))
+  (lib (name espressif-xess)(type Legacy)(uri ${KIPRJMOD}/ESP32-kiCAD-Footprints/ESP32-Footprints/espressif-xess.lib)(options "")(descr ""))
+)
