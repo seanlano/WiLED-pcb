@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "WiLED ESP32 Base"
-Date "2018-09-02"
+Date "2018-09-15"
 Rev "2.1"
 Comp "Sean Lanigan"
 Comment1 ""
@@ -800,10 +800,8 @@ Wire Notes Line
 	650  7650 650  5100
 Wire Notes Line
 	650  5100 4950 5100
-Text GLabel 2050 6650 0    47   BiDi ~ 0
+Text GLabel 1600 6000 0    47   BiDi ~ 0
 LED_PWM
-Wire Wire Line
-	2050 6650 2100 6650
 Connection ~ 2100 6650
 $Comp
 L power:GND #PWR020
@@ -819,9 +817,9 @@ $EndComp
 Wire Wire Line
 	2650 7150 2650 7200
 Wire Wire Line
-	1350 7200 2100 7200
+	1100 7200 1650 7200
 Connection ~ 2650 7200
-Text GLabel 1300 5550 0    47   Input ~ 0
+Text GLabel 1050 5550 0    47   Input ~ 0
 RAW
 $Comp
 L WiLED-rescue:R R14
@@ -846,7 +844,7 @@ F 3 "" H 2650 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 5550 1350 5550
+	1050 5550 1100 5550
 Wire Wire Line
 	2100 5550 2100 5850
 Wire Wire Line
@@ -854,7 +852,6 @@ Wire Wire Line
 Wire Wire Line
 	2100 5850 2500 5850
 Connection ~ 2100 5850
-Connection ~ 2100 5550
 Wire Wire Line
 	3200 5850 3200 6500
 Wire Wire Line
@@ -862,20 +859,19 @@ Wire Wire Line
 $Comp
 L WiLED-rescue:C C12
 U 1 1 5B269A23
-P 1350 6350
-F 0 "C12" H 1375 6450 50  0000 L CNN
-F 1 "10uF" H 1375 6250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 1388 6200 50  0001 C CNN
-F 3 "" H 1350 6350 50  0000 C CNN
-	1    1350 6350
+P 1100 6350
+F 0 "C12" H 1125 6450 50  0000 L CNN
+F 1 "10uF" H 1125 6250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 1138 6200 50  0001 C CNN
+F 3 "" H 1100 6350 50  0000 C CNN
+	1    1100 6350
 	1    0    0    -1  
 $EndComp
-Connection ~ 1350 5550
-Connection ~ 2100 7200
+Connection ~ 1100 5550
 Wire Wire Line
-	1350 6200 1350 5550
+	1100 6200 1100 5550
 Wire Wire Line
-	1350 6500 1350 7200
+	1100 6500 1100 7200
 Wire Wire Line
 	2100 6750 2100 6650
 Wire Wire Line
@@ -1400,8 +1396,6 @@ Wire Wire Line
 Wire Wire Line
 	2100 5550 2500 5550
 Wire Wire Line
-	1350 5550 2100 5550
-Wire Wire Line
 	2100 7200 2650 7200
 Wire Wire Line
 	3200 5850 3550 5850
@@ -1726,4 +1720,52 @@ F 3 "" H 4300 4700 50  0000 C CNN
 	1    4300 4700
 	1    0    0    -1  
 $EndComp
+$Comp
+L WiLED-rescue:LED_ALT D9
+U 1 1 5B9DC567
+P 1650 6650
+F 0 "D9" H 1650 6550 50  0000 C CNN
+F 1 "PWM LED" H 1650 6750 50  0000 C CNN
+F 2 "custom-footprints:WL-SMCW" H 1650 6650 50  0001 C CNN
+F 3 "" H 1650 6650 50  0000 C CNN
+	1    1650 6650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L WiLED-rescue:R R19
+U 1 1 5B9DC573
+P 1650 7000
+F 0 "R19" V 1550 7000 50  0000 C CNN
+F 1 "1k" V 1650 7000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1580 7000 50  0001 C CNN
+F 3 "" H 1650 7000 50  0000 C CNN
+	1    1650 7000
+	-1   0    0    1   
+$EndComp
+Text Notes 1850 6600 3    50   ~ 0
+Red
+Wire Wire Line
+	1650 6800 1650 6850
+Wire Wire Line
+	1650 7150 1650 7200
+Connection ~ 1650 7200
+Wire Wire Line
+	1900 6650 1900 6400
+Wire Wire Line
+	1900 6400 1650 6400
+Wire Wire Line
+	1650 6400 1650 6500
+Wire Wire Line
+	1900 6650 2100 6650
+Wire Wire Line
+	1600 6000 1650 6000
+Wire Wire Line
+	1650 6000 1650 6400
+Connection ~ 1650 6400
+Wire Wire Line
+	1100 5550 2100 5550
+Connection ~ 2100 5550
+Wire Wire Line
+	1650 7200 2100 7200
+Connection ~ 2100 7200
 $EndSCHEMATC
