@@ -6,10 +6,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "WiLED ESP32 Base"
-Date "2018-09-23"
+Date "2018-09-24"
 Rev "3.0"
 Comp "Sean Lanigan"
-Comment1 ""
+Comment1 "https://wiled.cc/"
 Comment2 "Main board for the WiLED Lamp, based on the ESP32."
 Comment3 ""
 Comment4 "Released under the CERN Open Hardware Licence v1.2"
