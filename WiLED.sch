@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "WiLED ESP32 Base"
-Date "2018-09-24"
+Date "2018-10-02"
 Rev "3.0"
 Comp "Sean Lanigan"
 Comment1 "https://wiled.cc/"
@@ -827,7 +827,7 @@ U 1 1 5B2683F6
 P 2650 5850
 F 0 "R14" V 2730 5850 50  0000 C CNN
 F 1 "0.27" V 2650 5850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 2580 5850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2580 5850 50  0001 C CNN
 F 3 "" H 2650 5850 50  0000 C CNN
 	1    2650 5850
 	0    1    1    0   
