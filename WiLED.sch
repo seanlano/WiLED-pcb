@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "WiLED ESP32 Base"
-Date "2018-10-08"
+Date "2018-10-10"
 Rev "3.0"
 Comp "Sean Lanigan"
 Comment1 "https://wiled.cc/"
@@ -856,17 +856,6 @@ Wire Wire Line
 	3200 5850 3200 6500
 Wire Wire Line
 	3200 6500 3150 6500
-$Comp
-L WiLED-rescue:C C12
-U 1 1 5B269A23
-P 1100 6350
-F 0 "C12" H 1125 6450 50  0000 L CNN
-F 1 "10uF" H 1125 6250 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 1138 6200 50  0001 C CNN
-F 3 "" H 1100 6350 50  0000 C CNN
-	1    1100 6350
-	1    0    0    -1  
-$EndComp
 Connection ~ 1100 5550
 Wire Wire Line
 	1100 6200 1100 5550
@@ -1515,17 +1504,6 @@ Connection ~ 9550 3700
 Wire Wire Line
 	8650 2750 8600 2750
 Connection ~ 8650 2750
-$Comp
-L Device:C C13
-U 1 1 5B8B5F13
-P 8850 4400
-F 0 "C13" H 8900 4500 50  0000 L CNN
-F 1 "10uF" H 8900 4300 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 8888 4250 50  0001 C CNN
-F 3 "~" H 8850 4400 50  0001 C CNN
-	1    8850 4400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10250 4600 10250 4550
 Wire Wire Line
@@ -1769,14 +1747,25 @@ Wire Wire Line
 	1650 7200 2100 7200
 Connection ~ 2100 7200
 $Comp
-L Device:CP C?
+L Device:CP C12
 U 1 1 5BB80A82
-P 850 6600
-F 0 "C?" H 968 6646 50  0000 L CNN
-F 1 "CP" H 968 6555 50  0000 L CNN
-F 2 "" H 888 6450 50  0001 C CNN
-F 3 "~" H 850 6600 50  0001 C CNN
-	1    850  6600
+P 1100 6350
+F 0 "C12" H 1218 6396 50  0000 L CNN
+F 1 "10uF" H 1218 6305 50  0000 L CNN
+F 2 "" H 1138 6200 50  0001 C CNN
+F 3 "~" H 1100 6350 50  0001 C CNN
+	1    1100 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C13
+U 1 1 5BBEE2BD
+P 8850 4400
+F 0 "C13" H 8900 4500 50  0000 L CNN
+F 1 "10uF" H 8900 4300 50  0000 L CNN
+F 2 "" H 8888 4250 50  0001 C CNN
+F 3 "~" H 8850 4400 50  0001 C CNN
+	1    8850 4400
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
