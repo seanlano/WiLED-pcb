@@ -66,7 +66,7 @@ U 1 1 5996F1E4
 P 8350 3150
 F 0 "P2" H 8350 3400 50  0000 C TNN
 F 1 "DC In" V 8200 3150 50  0000 C TNN
-F 2 "custom-footprints:Terminal" H 8350 2925 50  0001 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type059_RT06302HBWC_1x02_P3.50mm_Horizontal" H 8350 2925 50  0001 C CNN
 F 3 "" H 8325 3150 50  0001 C CNN
 	1    8350 3150
 	1    0    0    -1  
@@ -776,7 +776,7 @@ U 1 1 5B262FAF
 P 3950 7100
 F 0 "P4" H 3950 7350 50  0000 C TNN
 F 1 "LED Out" V 3800 7100 50  0000 C TNN
-F 2 "custom-footprints:Terminal" H 3950 6875 50  0001 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type059_RT06302HBWC_1x02_P3.50mm_Horizontal" H 3950 6875 50  0001 C CNN
 F 3 "" H 3925 7100 50  0001 C CNN
 	1    3950 7100
 	1    0    0    -1  
