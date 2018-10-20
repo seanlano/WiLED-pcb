@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.0.1-33cea8e~66~ubuntu18.04.1)
+(kicad_pcb (version 20171130) (host pcbnew 5.0.1-33cea8e~67~ubuntu18.04.1)
 
   (general
     (thickness 1.6)
@@ -258,6 +258,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KIPRJMOD}/custom-footprints/terminal_c-1546551-2-a-3d.stp
+      (offset (xyz 1.75 3.45 2.45))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 -180))
+    )
   )
 
   (module TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type059_RT06302HBWC_1x02_P3.50mm_Horizontal (layer F.Cu) (tedit 5BC719FB) (tstamp 5BDF91A7)
@@ -315,6 +320,11 @@
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model ${KIPRJMOD}/custom-footprints/terminal_c-1546551-2-a-3d.stp
+      (offset (xyz 1.75 3.45 2.45))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 -180))
     )
   )
 
@@ -803,10 +813,10 @@
       (net 26 CON_B))
     (pad 2 thru_hole circle (at 0 7.5) (size 1.8 1.8) (drill 1) (layers *.Cu *.Mask)
       (net 2 GND))
-    (model ${KIPRJMOD}/custom-footprints/pec11r-4x20f-sxxxx.stp
-      (offset (xyz 0 0 5.5))
+    (model ${KIPRJMOD}/custom-footprints/pec12-4x25f-nxxxx.stp
+      (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz -90 0 -180))
+      (rotate (xyz -90 0 0))
     )
   )
 
